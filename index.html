@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <title>Cardano Example Dapp</title>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <div>
+                    <h3>Example Dapp</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col d-flex justify-content-center">
+                <button id="access-button" class="btn-primary">Request Access To Yoroi</button>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-6 d-flex justify-content-center">
+                <button id="is-enabled-button" class="btn btn-block btn-light">Is Enabled</button>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <button id="get-account-balance-button" class="btn btn-block btn-light">Get Account Balance</button>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-6 d-flex justify-content-center">
+                <button id="get-unused-addresses-button" class="btn btn-block btn-light">Get Unused Addresses</button>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <button id="get-used-addresses-button" class="btn btn-block btn-light">Get Used Addresses</button>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-6 d-flex justify-content-center">
+                <button id="get-change-address-button" class="btn btn-block btn-light">Get Change Address</button>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <button id="get-reward-addresses-button" class="btn btn-block btn-light">Get Reward Addresses</button>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-6 d-flex justify-content-center">
+                <button id="get-utxos-button" class="btn btn-block btn-light">Get UTXOs</button>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <button id="get-collateral-utxos-button" class="btn btn-block btn-light">Get Collateral UTXOs</button>
+            </div>
+        </div>
+        <h3>PLUTUS TXs</h3>
+        <div class="row my-3">
+            <div class="col-6 d-flex justify-content-center">
+                <button id="sign-send-nft-to-script-button" class="btn btn-block btn-light">Send NFT To Script</button>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <button id="sign-redeem-nft-from-script-button" class="btn btn-block btn-light">Sign Redeem NFT From Script</button>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-6 d-flex justify-content-center">
+                <button id="submit-tx-button" class="btn btn-block btn-light">Submit Tx</button>
+            </div>
+        </div>
+        <div class="row my-3">
+            <pre id="on-screen-alert" class="d-none" role="alert">
+            </pre>
+        </div>
+    </div>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./bootstrap.js"></script>
+</body>
+
+</html>

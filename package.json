@@ -1,0 +1,25 @@
+{
+  "name": "education-dapp",
+  "version": "1.0.0",
+  "description": "an example dapp to show functions of dapp connector and yoroi wallet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "author": "Tsz Wai",
+  "license": "ISC",
+  "devDependencies": {
+    "@emurgo/cardano-serialization-lib-browser": "^10.2.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.1",
+    "webpack-filter-warnings-plugin": "^1.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "buffer": "^6.0.3"
+  }
+}
