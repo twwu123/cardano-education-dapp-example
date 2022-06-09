@@ -5,7 +5,8 @@ const path = require('path');
 module.exports = {
     entry: "./bootstrap.js",
     output: {
-        publicPath: '/dist/',
+        // add this for production
+        // publicPath: '/dist/',
         path: path.resolve(__dirname, "dist"),
         filename: "bootstrap.js",
     },
