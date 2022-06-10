@@ -153,7 +153,7 @@ getUTXOsButton.addEventListener('click', () => {
 
 getCollateralUTXOsButton.addEventListener('click', () => {
     checkApiAvailable()
-    api.getCollateralUtxos(2000000)
+    api.getCollateral(2000000)
         .then((hexUtxos) => {
             let utxos = []
             for (let i = 0; i < hexUtxos.length; i++) {
@@ -310,7 +310,7 @@ signRedeemNFTFromScriptButton.addEventListener('click', async () => {
 
     // handle collateral inputs
     const collateralTxInputsBuilder = CardanoWasm.TxInputsBuilder.new()
-    const hexCollateralUtxos = await api.getCollateralUtxos(3000000)
+    const hexCollateralUtxos = await api.getCollateral(3000000)
     for (let i = 0; i < hexCollateralUtxos.length; i++) {
         const wasmUtxo = CardanoWasm.TransactionUnspentOutput.from_bytes(utils.hexToBytes(hexCollateralUtxos[i]))
         collateralTxInputsBuilder.add_input(wasmUtxo.output().address(), wasmUtxo.input(), wasmUtxo.output().amount())
